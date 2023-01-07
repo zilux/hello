@@ -18,9 +18,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: ansible-lint site.yml
       
-      - name: Ansible Lint
-        uses: ansible/ansible-lint-action@v6.10.2
-        with:
-          path: site.yml 
-          # path: /home/devel/venv/bin/ansible-lint 
+#      - name: Ansible Lint
+#        uses: ansible/ansible-lint-action@v6.10.2
+#        with:
+#          path: site.yml 
+#          # path: /home/devel/venv/bin/ansible-lint 
