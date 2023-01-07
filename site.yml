@@ -8,4 +8,4 @@
 
   - name: Just for fun
     ansible.builtin.debug:
-      msg: Hello world!
+      msg: Hello world! 
