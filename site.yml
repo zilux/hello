@@ -1,0 +1,11 @@
+---
+- name: tst playbook
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+
+  - name: just for fun
+    debug:
+      msg: Hello world!
