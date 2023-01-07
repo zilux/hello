@@ -22,4 +22,5 @@ jobs:
       - name: Ansible Lint
         uses: ansible/ansible-lint-action@v6.10.2
         with:
-          path: /home/devel/venv/bin/ansible-lint 
+          path: site.yml 
+          # path: /home/devel/venv/bin/ansible-lint 
