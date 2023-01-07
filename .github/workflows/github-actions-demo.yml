@@ -21,8 +21,6 @@ jobs:
       - name: Ansible Lint
       
       - name: Ansible Lint
-      # You may pin to the exact commit or the version.
-      # uses: ansible/ansible-lint-action@2c4cedce36c2950aa48217b9d554c8c34da39eb6
-      uses: ansible/ansible-lint-action@v6.10.2
-      with:
-        path: /home/devel/venv/bin/ansible-lint 
+        uses: ansible/ansible-lint-action@v6.10.2
+        with:
+          path: /home/devel/venv/bin/ansible-lint 
