@@ -1,11 +1,11 @@
 ---
-- name: tst playbook
+- name: Test playbook
   hosts: all
   become: true
   gather_facts: false
 
   tasks:
 
-  - name: just for fun
-    debug:
+  - name: Just for fun
+    ansible.builtin.debug:
       msg: Hello world!
